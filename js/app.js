@@ -6,7 +6,7 @@ var greetings = ('Welcome!');
 alert('Greetings '+ greetings);
 var nameOfTheUser =prompt ('What is your name?');
 
-alert('welcome again '+ nameOfTheUser);
+alert('welcome  '+ nameOfTheUser);
 console.log('user name is '+nameOfTheUser);
 
 var whatYouLove =prompt ('Do you know where Ethiopia is? ');
@@ -17,7 +17,7 @@ if(whatYouLove.toLowerCase() === 'yes'|| whatYouLove.toLowerCase() === 'y')
   score+=1;
 }
 else{
-  alert('Its located in east Africa.');
+  alert('Its located in Eastern part of Africa.');
 }
 console.log('user answer is '+ whatYouLove);
 var city=prompt('Do you think am originally form Ethiopia?');
@@ -52,7 +52,7 @@ console.log('user answer is '+ months);
 var redFox=prompt('Do you know Red fox only extsisted in Ethiopia?');
 if(redFox.toLowerCase() === 'yes'||redFox.toLowerCase() === 'y')
 {
-  alert('yes!');
+  alert('Yes you got it!');
   score+=1;
 }
 else{
@@ -61,7 +61,6 @@ else{
 console.log('user answer is '+ redFox);
 
 var chances = 4;
-
 while (chances > 0) {
   chances = chances -1;//check
   var guess=prompt('Guess my lucky number 1-5');
@@ -80,12 +79,15 @@ while (chances > 0) {
       alert('too high');
   }
 }
-// not working the loop
+alert ('too many wrong answer. Hit ok for next question');
 
-var sport = ['soccer ','baseball ','football ','basketball ','teniss ','swimming ','running '];
-var askSport = prompt('Guess my faviorite sport' + sport);
-
-if(askSport === 'soccer')
+var trySport = 6;
+while (trySport>0){
+  trySport=trySport-1;
+  var sport = ['soccer ','baseball ','football ','basketball ','teniss ','swimming ','running '];
+  var askSport = prompt('Guess my faviorite sport from the list above ' + sport);
+}
+if(askSport.toLowerCase() === 'soccer ')
 {
   alert ('yeah!');
   score+=1;
