@@ -71,6 +71,7 @@ while (chances > 0) {
     score+=1;
     break;
   }
+
   else if(guess !== myNumber){
     if(guess < myNumber)
 
@@ -79,7 +80,6 @@ while (chances > 0) {
       alert('too high');
   }
 }
-alert ('too many wrong answer. Hit ok for next question');
 
 var trySport = 6;
 while (trySport>0){
